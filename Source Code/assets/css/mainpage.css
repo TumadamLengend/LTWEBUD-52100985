@@ -17,11 +17,10 @@
 }
 .list-group-item .artist {
     font-size: 1.2em;
-    color: #6c757d;
+    color: #ffffff;
 }
 .custom-navbar {
-    background-color: #000000; 
-    border:1px solid #727679;
+    background-color: #343a40; 
     border-radius:0.85rem;
     margin-left: 20px;
     margin-right: 20px;

@@ -133,13 +133,13 @@ function prepareCountStatementWithoutGenre($conn, $search) {
 
         <div class="row">
             <div class="col-md-12">
-                <h1 class="text-center mb-6">Tải Lên Gần Đây</h1>
+                <h1 style="color:#fff" class="text-center mb-6">Tải Lên Gần Đây</h1>
                 <div class="row">
                     <?php if ($vipres->num_rows > 0): ?>
                         <?php while ($viprow = $vipres->fetch_assoc()): ?>
                             <div class="col-md-4 mb-4">
                                 <div class="card shadow custom-rounded">
-                                    <img  width="400" height="300" src="<?= $viprow['pathimg'] ?>" class="card-img-top" alt="Song image">
+                                    <img style="border-radius:0.875rem" width="400" height="300" src="<?= $viprow['pathimg'] ?>" class="card-img-top" alt="Song image">
                                     <div class="card-body">
                                         <h5 class="card-title" style="text-align: center;"><?= $viprow['title'] ?></h5>
                                         <p class="card-text" style="text-align: center;"><?= $viprow['artist'] ?></p>
@@ -205,7 +205,9 @@ function prepareCountStatementWithoutGenre($conn, $search) {
             });
         });
     </script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <?php include 'footer.php'; ?>
 </body>
+
+
 </html>

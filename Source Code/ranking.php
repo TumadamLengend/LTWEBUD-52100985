@@ -34,7 +34,7 @@ $top_rated_users = $stmt->get_result();
 <?php include 'nav.php'; ?>
     <div class="container">
         <h1 class="text-center">Top 10 Người Dùng Tải Lên Nhiều Nhất</h1>
-        <table class="table table-striped">
+        <table class="table table-dark">
             <thead>
                 <tr>
                     <th class="text-center">Hạng</th>
@@ -71,7 +71,7 @@ $top_rated_users = $stmt->get_result();
         <br>
         <br>
         <h1 class="text-center">Top 10 Người Dùng Được Đánh Giá Cao Nhất</h1>
-        <table class="table table-striped">
+        <table class="table table-dark">
             <thead>
                 <tr>
                     <th class="text-center">Hạng</th>
@@ -108,7 +108,7 @@ $top_rated_users = $stmt->get_result();
         <br>
         <br>
         <h1 class="text-center">Top 10 Bài Hát Được Nghe Nhiều Nhất</h1>
-        <table class="table table-striped">
+        <table class="table table-dark">
             <thead>
                 <tr>
                     <th class="text-center">Hạng</th>

@@ -87,7 +87,7 @@
                                             </div>
                                             <div class="mt-4 mt-lg-0" style="display: flex; align-items: center; justify-content: space-between;">
                                                 <b style="margin-left:50px">Avatar hiện tại</b>
-                                                <img src="<?php echo (!empty($currentAvatarPath) ? $currentAvatarPath : 'assets/img/user.png'); ?>" alt="Current Avatar" style="width: 150px; height: 150px; object-fit: cover;">
+                                                <img style="border-radius:0.875rem" src="<?php echo (!empty($currentAvatarPath) ? $currentAvatarPath : 'assets/img/user.png'); ?>" alt="Current Avatar" style="width: 150px; height: 150px; object-fit: cover;">
                                                 <button id="submit" type="button" onclick="changeavt()" class="btn btn-primary w-md">Cập nhật</button>
                                             </div>
                                         </form>
@@ -100,8 +100,7 @@
             </div> <!-- container-fluid -->
         </div>
     </div>
-</div>
-
+</div>    
 <script>
     var baseurl = window.location.protocol + "//" + window.location.host;
     function changepw() {

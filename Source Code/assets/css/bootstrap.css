@@ -49,10 +49,20 @@ body {
     font-size: 1.0rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: #fff;
     background-color: #e9e9ef;
+    background-image: url('../../assets/img/bg.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto;
 }
 hr {
     margin: 1rem 0;
@@ -261,6 +271,7 @@ svg {
     vertical-align: middle;
 }
 table {
+
     caption-side: bottom;
     border-collapse: collapse;
 }
@@ -1867,19 +1878,20 @@ progress {
     }
 }
 .table {
-    --bs-table-bg: transparent;
+    --bs-table-bg: #000000;
     --bs-table-accent-bg: transparent;
-    --bs-table-striped-color: #495057;
-    --bs-table-striped-bg: #f8f9fa;
-    --bs-table-active-color: #495057;
+    --bs-table-striped-color: #ffffff;
+    --bs-table-striped-bg: #000000;
+    --bs-table-active-color: #ffffff;
     --bs-table-active-bg: #f8f9fa;
     --bs-table-hover-color: #495057;
     --bs-table-hover-bg: #f8f9fa;
     width: 100%;
     margin-bottom: 1rem;
-    color: #495057;
+    color: #ffffff;
     vertical-align: top;
-    border-color: #e9e9ef;
+    border-radius:0.875rem;
+
 }
 .table > :not(caption) > * > * {
     padding: 0.75rem;
@@ -1945,6 +1957,7 @@ progress {
     --bs-table-hover-color: #000;
     color: #000;
     border-color: #cccdd1;
+    border-radius:0.875rem;
 }
 .table-success {
     --bs-table-bg: #d4f0e5;
@@ -1956,6 +1969,7 @@ progress {
     --bs-table-hover-color: #000;
     color: #000;
     border-color: #bfd8ce;
+    border-radius:0.875rem;
 }
 .table-info {
     --bs-table-bg: #dbedfc;
@@ -1967,6 +1981,7 @@ progress {
     --bs-table-hover-color: #000;
     color: #000;
     border-color: #c5d5e3;
+    border-radius:0.875rem;
 }
 .table-warning {
     --bs-table-bg: #fff2dd;
@@ -4548,7 +4563,9 @@ fieldset:disabled .btn {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid #e9e9ef;
+    background-image: url('../../assets/img/music.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 0.875rem;
 }
 .card > hr {
@@ -4581,6 +4598,7 @@ fieldset:disabled .btn {
 
 }
 .card-title {
+    color: #fff;
     margin-bottom: 0.5rem;
 }
 .card-subtitle {
@@ -4589,6 +4607,9 @@ fieldset:disabled .btn {
 .card-subtitle,
 .card-text:last-child {
     margin-bottom: 0;
+}
+.card-text {
+    color: #fff;
 }
 .card-link:hover {
     text-decoration: none;
@@ -4599,8 +4620,7 @@ fieldset:disabled .btn {
 .card-header {
     padding: 1.25rem;
     margin-bottom: 0;
-    background-color: #fff;
-    border-bottom: 1px solid #e9e9ef;
+    background-color: #343a40;
 }
 .card-header:first-child {
     border-radius: 0.875rem;
@@ -7685,10 +7705,10 @@ fieldset:disabled .btn {
     color: #fff !important;
 }
 .text-body {
-    color: #495057 !important;
+    color: #fff !important;
 }
 .text-muted {
-    color: #74788d !important;
+    color: #fff !important;
 }
 .text-black-50 {
     color: rgba(0, 0, 0, 0.5) !important;
@@ -11315,7 +11335,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #495057;
+    color: #fff;
 }
 a {
     text-decoration: none !important;

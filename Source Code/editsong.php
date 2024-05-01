@@ -93,7 +93,6 @@ if($_SESSION['quyen'!=1]){
         </div>
     </div>
 </div>
-
 <script>
     var baseurl = window.location.protocol + "//" + window.location.host;
     function editsong(id) {

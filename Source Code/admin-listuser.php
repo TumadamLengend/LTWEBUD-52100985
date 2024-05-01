@@ -35,7 +35,7 @@ while ($row = $result->fetch_assoc()) {
 <body>
 <?php include 'nav.php'; ?>
     <div class="container">
-        <table class="table table-striped">
+        <table class="table table-dark">
             <thead>
                 <tr>
                     <th class="text-center">ID</th>

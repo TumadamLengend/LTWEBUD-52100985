@@ -26,7 +26,7 @@ if($_SESSION['quyen'] != 1) {
 <body>
 <?php include 'nav.php'; ?>
     <div class="container">
-        <table class="table table-striped">
+        <table class="table table-dark">
             <thead>
                 <tr>
                     <th class="text-center">ID</th>
