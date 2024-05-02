@@ -97,10 +97,13 @@ if ($_REQUEST) {
             } else {
                 $email = $check_email['email'];
                 $usr = $check_email['username'];
+                $quyen = $check_username['quyen'];
                 session_start();
                 $_SESSION["loggedin"] = true;
                 $_SESSION['email'] = $email;
                 $_SESSION['username'] = $usr;
+                $_SESSION['fullname'] = $fullname;
+                $_SESSION['quyen'] = $quyen;
                 $access = $check_email['truy_cap'] + 1;
                 $stmt = $conn->prepare("UPDATE tai_khoan SET truy_cap = ? WHERE email = ?");
                 $stmt->bind_param("is", $access, $email);

@@ -1,4 +1,5 @@
-<?php include 'configh/session.php'; 
+<?php include_once 'configh/session.php'; 
+
 if ($_SESSION['quyen'] != 1) {
     echo "<script type='text/javascript'>document.location.href='pages-404.php';</script>";
     exit;
@@ -27,7 +28,7 @@ while ($row = $result->fetch_assoc()) {
     <link rel=icon href="assets/img/fav.ico" sizes="16x16" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/mainpage.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/swal.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
